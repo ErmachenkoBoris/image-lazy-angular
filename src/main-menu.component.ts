@@ -7,11 +7,11 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 import { appConfig } from './app.config';
 
 @Component({
-  selector: 'app-root',
+  selector: 'main-menu',
   standalone: true,
   imports: [NgOptimizedImage, RouterOutlet, RouterLink, CommonModule],
   template: `
-  <!-- <div style="display: flex;">
+  <div style="display: flex;">
 
 
       <span (click)="stateIsImage = true;" style="display: flex;">
@@ -64,13 +64,9 @@ import { appConfig } from './app.config';
       <br>
       <a routerLink="/defer-custom-angular">Defer Custom Angular</a>
       <br>
-    </ng-template> -->
-    <router-outlet></router-outlet>
+    </ng-template>
   `,
 })
-export class App {
-  name = 'Angular';
+export class MainMenu {
   stateIsImage = true;
 }
-
-bootstrapApplication(App, appConfig);
