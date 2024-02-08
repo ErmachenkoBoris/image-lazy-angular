@@ -9,7 +9,7 @@ import 'zone.js';
   standalone: true,
   imports: [LazyLoadImageModule, RouterLink],
   template: `
-      <a routerLink="/"><=Menu</a>
+
 
     <h1>Lib Lazy Loading (ng-lazyload-image)</h1>
     <p>Грузит именно то, что находится во viewport</p>

@@ -7,7 +7,7 @@ import { RouterLink } from '@angular/router';
   standalone: true,
   imports: [RouterLink],
   template: `
-      <a routerLink="/"><=Menu</a>
+
 
     <h1>Default Loading</h1>
     <p>По дефолту - загрузит сразу все картинки</p>

@@ -8,7 +8,7 @@ import { RouterLink } from '@angular/router';
   standalone: true,
   imports: [CommonModule, ObserveVisibilityDirective, RouterLink],
   template: `
-      <a routerLink="/"><=Menu</a>
+
 
     <p>custom defer. Можно написать свою директиву</p>
 

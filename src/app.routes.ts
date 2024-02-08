@@ -8,15 +8,25 @@ import { DefaultComponent } from './components/component-examples/default.compon
 import { CustomDefer } from './components/component-examples/custom-defer.component';
 import { AngularDefer } from './components/component-examples/angular-defer.component';
 import { MainMenu } from './main-menu.component';
+import { MainMenuImages } from './main-images.component';
+import { MainMenuComponents } from './main-components.component';
 
 export const routes: Routes = [
   {path: '', pathMatch: 'full', component: MainMenu},
-  { path: 'native-lazy', component: NativeLazy },
-  { path: 'ngsrc', component: Ngsrc },
-  { path: 'lib-lazy', component: LibLazy },
-  { path: 'custom-directive-lazy', component: CustomDirective },
-  { path: 'default', component: DefaultImage },
-  { path: 'default-component', component: DefaultComponent },
-  { path: 'defer-angular', component:  AngularDefer },
-  { path: 'defer-custom-angular', component: CustomDefer },
+  {path: '', pathMatch: 'full', component: MainMenu},
+  { path: 'images', component: MainMenuImages, children: [
+    { path: 'native-lazy', component: NativeLazy },
+    { path: 'ngsrc', component: Ngsrc },
+    { path: 'lib-lazy', component: LibLazy },
+    { path: 'custom-directive-lazy', component: CustomDirective },
+    { path: 'default', component: DefaultImage },
+  ] },
+  { path: 'components', component: MainMenuComponents, children: [
+    { path: 'default-component', component: DefaultComponent },
+    { path: 'defer-angular', component:  AngularDefer },
+    { path: 'defer-custom-angular', component: CustomDefer },
+  ] },
+
+
+
 ];

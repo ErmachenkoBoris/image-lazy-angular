@@ -7,7 +7,7 @@ import { RouterLink } from '@angular/router';
   standalone: true,
   imports: [RouterLink],
   template: `
-      <a routerLink="/"><=Menu</a>
+
 
     <h1>Native Lazy Loading - loading="lazy"</h1>
     <p>В зависимости от браузера работает по-разному, хром грузит сразу несколько картинок "с запасом"(зависит от скорости интернета

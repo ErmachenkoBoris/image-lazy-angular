@@ -7,7 +7,7 @@ import { RouterLink } from '@angular/router';
   standalone: true,
   imports: [ImageLazyLoadModule, RouterLink],
   template: `
-      <a routerLink="/"><=Menu</a>
+
 
     <h1>Custom Directive Loading</h1>
     <p>Кастомная директива, которая будет работать на IntersectionObserver </p>

@@ -7,7 +7,7 @@ import { RouterLink } from '@angular/router';
   standalone: true,
   imports: [NgOptimizedImage, RouterLink],
   template: `
-      <a routerLink="/"><=Menu</a>
+
 
     <h1>Ngsrc Loading(новая директива NgOptimizedImage Angular14+)</h1>
     <p>под капотом используется loading="lazy"<a target="_blank" href="https://github.com/angular/angular/blob/41b7ec4eb92361ec8f0a09d1d3db053c3890cc32/packages/common/src/directives/ng_optimized_image/ng_optimized_image.ts">исходники ангуляр</a></p>
